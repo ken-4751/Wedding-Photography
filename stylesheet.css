@@ -255,7 +255,7 @@ body { font-family: sans-serif; }
         height: 150px;
 }
 
-.flickity-prev-next-button.previous {
+/*.flickity-prev-next-button.previous {
     right: 10px;
     display: inline;
 }
@@ -283,7 +283,7 @@ body { font-family: sans-serif; }
         border-radius: 5px;
        
       }
-}
+}*/
 .flickity-page-dots{
     display: none;
 
@@ -324,9 +324,9 @@ body { font-family: sans-serif; }
 }
 
 .carousel-cell {
-    width: 33%;
+    width: 28%;
     height: 300px;
-    margin-right: 0px;
+    margin-right: 10px;
     border-radius: 5px;
    
   }
@@ -461,7 +461,7 @@ body { font-family: sans-serif; }
 .kit-position1 {
     z-index: 98;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 0;
     right:0;
     margin-left:auto;
