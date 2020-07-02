@@ -911,3 +911,11 @@ body { font-family: sans-serif; }
         font-size: 20px;
     }
     }
+    @media (max-width: 768px){
+    .navColor {
+        background: #1F252A;
+        position: relative;
+        padding-top: 0px;
+        padding-bottom: 0;
+    }
+}
