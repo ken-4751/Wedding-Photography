@@ -108,6 +108,55 @@ nav {
 }
 /* Gallery Section */
 
+.gal-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 2px 2px;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+
+
+
+.gal-item-2 {
+    grid-area: 1 / 1 / 5 / 5;
+    background-image: url(./img/gallery\ images.png);
+    background-size: 100% 100%;
+}
+
+.gal-item-10 {
+    grid-area: 1 / 5 / 2 / 10;
+    background-image: url(./img/gallery\ images\ 1.png);
+    background-size: 100% 100%;
+}
+
+.gal-item-11 {
+    grid-area: 2 / 5 / 5 / 9;
+    background-image: url(./img/gallery\ images\ 2.png);
+    background-size: 100% 100%;
+}
+
+.gal-item-12 {
+    grid-area: 2 / 9 / 5 / 10;
+    background-image: url(./img/gallery\ images\ 3.png);
+    background-size: 100% 100%;
+}
+
+.gal-item-13 {
+    grid-area: 1 / 10 / 3 / 13;
+    background-image: url(./img/gallery\ images\ 4.png);
+    background-size: 100% 100%;
+}
+
+.gal-item-14 {
+    grid-area: 3 / 10 / 5 / 13;
+    background-image: url(./img/gallery\ images\ 5.png);
+    background-size: 100% 100%;
+}
+
 /* external css: flickity.css */
 
 * { box-sizing: border-box; }
@@ -555,12 +604,27 @@ body { font-family: sans-serif; }
     .sub-txt{
         font-size: 15px;
     }
+    .card-position{
+        width:100% !important;
+    }
+    .story-margin{
+        margin-bottom:0;
+    }
+    .social-icon-size {
+        width: 15px;
+    }
+    .spacingHd {
+        margin-top: -25px;
+    }
     
 }
 
 @media(max-width:450px) {
     .quote-itself {
         font-size: 35px;
+    }
+    .kit-position1 {
+        top: 10%;
     }
 }
 
@@ -577,6 +641,9 @@ body { font-family: sans-serif; }
     .navColor{
         background: #1F252A;
         position: relative;
+    }
+    .gal-container{
+        height:40vh;
     }
 }
 
@@ -860,6 +927,9 @@ body { font-family: sans-serif; }
 .card-direction{
     flex-direction: column;
 }
+.gal-container{
+    height:20vh;
+}
 }
 
 @media(max-width:750px){
@@ -918,4 +988,22 @@ body { font-family: sans-serif; }
         padding-top: 0px;
         padding-bottom: 0;
     }
+}
+
+@media (max-width: 576px){
+.flickity-prev-next-button.previous {
+    left: 10px;
+    display: inline;
+    position: absolute;
+    top: 50%;
+}
+}
+
+@media (max-width: 576px){
+.flickity-prev-next-button.next {
+    right: 10px;
+    display: inline;
+    position: absolute;
+    top: 50%;
+}
 }
